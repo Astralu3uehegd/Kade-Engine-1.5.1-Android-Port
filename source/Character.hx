@@ -144,11 +144,11 @@ class Character extends FlxSprite
 			case 'Adrix':
 				tex = Paths.getSparrowAtlas('characters/Adrix', 'shared');
 				frames = tex;
-				animation.addByPrefix('idle', 'Idle', 24);
-				animation.addByPrefix('singUP', 'Up', 24);
-				animation.addByPrefix('singRIGHT', 'Right', 24);
-				animation.addByPrefix('singDOWN', 'Down', 24);
-				animation.addByPrefix('singLEFT', 'Left', 24);
+				animation.addByPrefix('idle', 'Idle', 5);
+				animation.addByPrefix('singUP', 'Up', 3);
+				animation.addByPrefix('singRIGHT', 'Right', 3);
+				animation.addByPrefix('singDOWN', 'Down', 3);
+				animation.addByPrefix('singLEFT', 'Left', 3);
 
 				addOffset('idle');
 				addOffset("singUP", 3, -14);
@@ -158,6 +158,7 @@ class Character extends FlxSprite
 				
 				playAnim('idle'):
 
+				
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('characters/spooky_kids_assets');
 				frames = tex;
